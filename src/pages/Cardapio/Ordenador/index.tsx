@@ -1,12 +1,12 @@
-import React, {useState} from "react";
-import * as classNames from "classnames";
+import {Dispatch, SetStateAction, useState} from "react";
+import classNames from "classnames";
 import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json'
 import {MdKeyboardArrowDown, MdKeyboardArrowUp} from "react-icons/md";
 
 interface Props {
-    ordenador: string,
-    setOrdenador: React.Dispatch<React.SetStateAction<string>>
+    ordenador: string;
+    setOrdenador: Dispatch<SetStateAction<string>>;
 }
 
 export default function Ordenador({
